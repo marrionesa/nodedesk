@@ -1,0 +1,48 @@
+{
+  "name": "nodedesk",
+  "version": "0.1.0",
+  "private": true,
+  "description": "NodeDesk Ecosystem monorepo — @nodedesk/core, @nodedesk/templates, @nodedesk/plugins and @nodedesk/cli. NodeDesk Desktop remains a separate proprietary product.",
+  "type": "module",
+  "license": "MIT",
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "packageManager": "pnpm@9.15.9",
+  "scripts": {
+    "build": "pnpm -r run build",
+    "test": "pnpm -r run test",
+    "typecheck": "pnpm -r run typecheck",
+    "clean": "pnpm -r run clean",
+    "example": "pnpm --filter @nodedesk/example-* run start"
+  },
+  "keywords": [
+    "nodedesk",
+    "nodejs",
+    "project-manager",
+    "node",
+    "typescript",
+    "developer-tools",
+    "process-manager",
+    "cli",
+    "plugins",
+    "templates"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/marrionesa/nodedesk.git"
+  },
+  "homepage": "https://github.com/marrionesa/nodedesk#readme",
+  "bugs": {
+    "url": "https://github.com/marrionesa/nodedesk/issues"
+  },
+  "devDependencies": {
+    "@types/node": "^20.14.0",
+    "typescript": "^5.5.4",
+    "vitest": "^3.0.0"
+  },
+  "workspaces": [
+    "packages/*",
+    "examples/*"
+  ]
+}

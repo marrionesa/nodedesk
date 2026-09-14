@@ -1,0 +1,61 @@
+{
+  "name": "@nodedesk/templates",
+  "version": "0.1.0",
+  "private": false,
+  "description": "Template management and project scaffolding for the NodeDesk ecosystem.",
+  "type": "module",
+  "license": "MIT",
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "default": "./dist/index.js"
+    },
+    "./package.json": "./package.json"
+  },
+  "files": [
+    "dist",
+    "README.md",
+    "LICENSE",
+    "package.json"
+  ],
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "scripts": {
+    "build": "tsc -p tsconfig.build.json",
+    "typecheck": "tsc --noEmit",
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "clean": "node -e \"require('fs').rmSync('dist',{recursive:true,force:true})\""
+  },
+  "keywords": [
+    "nodedesk",
+    "nodejs",
+    "node",
+    "typescript",
+    "developer-tools",
+    "templates",
+    "scaffolding",
+    "generator",
+    "starter"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/marrionesa/nodedesk.git",
+    "directory": "packages/templates"
+  },
+  "homepage": "https://github.com/marrionesa/nodedesk#readme",
+  "bugs": {
+    "url": "https://github.com/marrionesa/nodedesk/issues"
+  },
+  "dependencies": {
+    "@nodedesk/core": "0.1.0"
+  },
+  "devDependencies": {
+    "@types/node": "^20.14.0",
+    "typescript": "^5.5.4",
+    "vitest": "^3.0.0"
+  }
+}

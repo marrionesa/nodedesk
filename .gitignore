@@ -1,0 +1,34 @@
+# Dependencies
+node_modules/
+
+# Build output
+dist/
+*.tsbuildinfo
+*.tgz
+*.zip
+
+# Test / coverage
+coverage/
+
+# Environment
+.env
+.env.local
+.env.*
+
+# Editors & OS
+.DS_Store
+.idea/
+.vscode/
+*.swp
+
+# Logs
+*.log
+
+# pnpm store
+.pnpm-store/
+
+# Local audit and migration artifacts
+.package-audit-*/
+.package-external-test/
+.types-backup-*/
+tree-maker/

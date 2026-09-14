@@ -1,0 +1,20 @@
+{
+  "name": "@nodedesk/example-env-manager",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Ejemplo 3 · gestión del .env con EnvManager (set/all/delete/entries/buildEnvironment).",
+  "type": "module",
+  "license": "MIT",
+  "scripts": {
+    "start": "tsx index.ts",
+    "typecheck": "tsc --noEmit"
+  },
+  "dependencies": {
+    "@nodedesk/core": "workspace:*"
+  },
+  "devDependencies": {
+    "@types/node": "^20.14.0",
+    "tsx": "^4.19.0",
+    "typescript": "^5.5.4"
+  }
+}
